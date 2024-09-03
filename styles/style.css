@@ -9,18 +9,11 @@
   inline-size: 100%;
 }
 
-@media (width >=768px) {
-  :root {
-    --small: 20px;
-  }
-}
-
 .header {
   padding-inline-start: var(--small);
   padding-inline-end: var(--small);
   padding-block-start: var(--small);
   min-block-size: min(668px, 100vh);
-  max-block-size: max(1440px, 100vh);
   position: relative;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(26px, min-content));
@@ -357,6 +350,10 @@ h3 + h4 {
   margin: 0;
 }
 
+.pictures_card {
+  padding-block-end: 50px;
+}
+
 @media (width >=768px) {
   .pictures_card {
     padding-block-end: 80px;
@@ -415,8 +412,7 @@ h3 + h4 {
 }
 
 .footer {
-  min-block-size: 668px;
-  max-block-size: max(1440px, 100vh);;
+  min-block-size: min(668px, 100vh);
   inline-size: 100%;
   padding-inline-start: var(--small);
   padding-inline-end: var(--small);

@@ -11,7 +11,83 @@
   --accent-color: #ff0070;
   --main-title-color: #db00ff;
   --font-size-text: 18px;
-  --small: 10px;
   --main-color-text: #f1b2ce;
   --bg-img: url(../images/cover-image-dark.png);
+}
+
+.page.theme_dark .decorated-zone::before {
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--accent-color);
+  margin-inline-start: calc(100% - (var(--small) + 15px));
+  display: inline-block;
+}
+
+@media (width >=768px) {
+  .page.theme_dark .decorated-zone::before {
+    margin-inline-start: calc(100% - (var(--small) + 5px));
+  }
+}
+
+@media (width >=1024px) {
+  .page.theme_dark .decorated-zone::before {
+    grid-row-start: 1;
+    justify-self: end;
+  }
+}
+
+.page.theme_dark .decorated-zone::after {
+  content: '';
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-color);
+  margin-inline-end: calc(100% - (var(--small) + 15px));
+  margin-block-end: calc(var(--small));
+  display: inline-block;
+}
+
+@media (width >=768px) {
+  .page.theme_dark .decorated-zone::after {
+    margin-inline-end: calc(100% - var(--small));
+  }
+}
+
+@media (width >=1024px) {
+  .page.theme_dark .decorated-zone::after {
+    margin-inline-end: calc(100% - var(--small));
+    grid-row-start: 4;
+  }
+}
+
+.page.theme_dark .REC__dark-theme {
+  color: var(--accent-color);
+  font-size: var(--font-size-text);
+  position: absolute;
+  inset-inline-end: 15px;
+  inset-block-start: var(--small);
+}
+
+@media (width >=768px) {
+  .page.theme_dark .REC__dark-theme {
+    color: var(--accent-color);
+    font-size: var(--font-size-text);
+    position: absolute;
+    inset-inline-end: 25px;
+  }
+}
+
+.page.theme_dark .REC__dark-theme::after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  display: inline-block;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  margin-inline-start: 12px;
+  margin-inline-end: 2px;
+  margin-block-end: 2.5px;
 }

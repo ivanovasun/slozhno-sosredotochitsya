@@ -14,3 +14,9 @@
   --main-color-text: #f1b2ce;
   --bg-img: url(../images/cover-image-dark.png);
 }
+
+@media (width >=768px) {
+  :root {
+    --small: 20px;
+  }
+}
