@@ -43,7 +43,6 @@
 }
 
 @media (prefers-color-scheme: light) {
-
   :root {
     --main-color: #353430;
     --accent-color: #ff8dcb;
