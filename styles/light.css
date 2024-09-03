@@ -56,7 +56,7 @@
     color: var(--main-color);
   }
 
-  .REC__dark-theme {
+  .page.theme_auto .REC__dark-theme {
     display: none;
   }
 
@@ -77,12 +77,12 @@
     border-bottom: 1px solid var(--main-color);
   }
 
-  .decorated-zone::before {
+  .page.theme_auto .decorated-zone::before {
     border-right: 1px solid var(--main-color);
     border-top: 1px solid var(--main-color);
   }
 
-  .decorated-zone::after {
+  .page.theme_auto .decorated-zone::after {
     border-left: 1px solid var(--main-color);
     border-bottom: 1px solid var(--main-color);
   }
