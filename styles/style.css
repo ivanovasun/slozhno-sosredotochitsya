@@ -20,7 +20,7 @@
   padding-inline-end: var(--small);
   padding-block-start: var(--small);
   min-block-size: min(668px, 100vh);
-  max-block-size: 1024px;
+  max-block-size: max(1440px, 100vh);
   position: relative;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(26px, min-content));
@@ -170,8 +170,8 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--main-title-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-  padding-block-end: 0.45em;
-  padding-block-start: 0.6em;
+  padding-block-end: 15.5%;
+  padding-block-start: 18.3%;
   line-height: 83%;
   inline-size: 100%;
 }
@@ -179,8 +179,8 @@
 @media (width >= 768px) {
   .header__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding-block-start: 1.45em;
-    padding-block-end: 1.35em;
+    padding-block-start: 23.76%;
+    padding-block-end: 22.5%;
     inline-size: calc(100% + (var(--small) * 2));
     margin-inline-start: calc(var(--small) * (-1));
   }
@@ -358,6 +358,12 @@ h3 + h4 {
 }
 
 @media (width >=768px) {
+  .pictures_card {
+    padding-block-end: 80px;
+  }
+}
+
+@media (width >=768px) {
   .content__figure {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr));
@@ -410,12 +416,11 @@ h3 + h4 {
 
 .footer {
   min-block-size: 668px;
-  max-block-size: 100vh;
+  max-block-size: max(1440px, 100vh);;
   inline-size: 100%;
   padding-inline-start: var(--small);
   padding-inline-end: var(--small);
   background-color: var(--bg-color);
-  padding-block-start: 2.9rem;
 }
 
 .footer__title {
@@ -430,14 +435,9 @@ h3 + h4 {
 }
 
 @media (width >=768px) {
-  .footer {
-    padding-block-start: 80px;
-  }
-
   .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    padding-block-start: 57%;
-    padding-block-end: 57%;
+    padding-block: 57%;
   }
 }
 
