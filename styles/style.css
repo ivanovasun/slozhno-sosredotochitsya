@@ -13,8 +13,7 @@
   padding-inline-start: var(--small);
   padding-inline-end: var(--small);
   padding-block-start: var(--small);
-  min-block-size: 668px;
-  max-block-size: max(1440px, 100vh);
+  min-block-size: min(100vh, 668px);
   position: relative;
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax(26px, min-content));
@@ -413,8 +412,7 @@ h3 + h4 {
 }
 
 .footer {
-  min-block-size: 668px;
-  max-block-size: max(1440px, 100vh);
+  min-block-size: min(100vh, 668px);
   inline-size: 100%;
   padding-inline-start: var(--small);
   padding-inline-end: var(--small);
