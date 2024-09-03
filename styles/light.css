@@ -1,12 +1,90 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --main-color: #353430;
+  --accent-color: #ff8dcb;
+  --main-title-color: #ffc2e6;
+  --main-color-text: #353430;
+  --bg-color: #fff1f7;
+  --bg-img: url(../images/cover-image-light.png);
+}
+
+.page.theme_light .section__title {
+  color: var(--main-color);
+}
+
+.page.theme_light .REC__dark-theme {
+  display: none;
+}
+
+.page.theme_light .header__theme-menu-button_active.theme_light {
+  border: 1px solid var(--main-color);
+  padding: 2px 13px;
+}
+
+.page.theme_light .header__theme-menu-button:hover {
+  border: 1px solid rgb(55 49 45 / 0.4);
+}
+
+.page.theme_light .header__theme-menu-button:focus {
+  outline: none;
+}
+
+.page.theme_light .header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.page.theme_light .decorated-zone::before {
+  border-right: 1px solid var(--main-color);
+  border-top: 1px solid var(--main-color);
+}
+
+.page.theme_light .decorated-zone::after {
+  border-left: 1px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --main-color: #353430;
+    --accent-color: #ff8dcb;
+    --main-title-color: #ffc2e6;
+    --main-color-text: #353430;
+    --bg-color: #fff1f7;
+    --bg-img: url(../images/cover-image-light.png);
+  }
+
+  .section__title {
+    color: var(--main-color);
+  }
+
+  .REC__dark-theme {
+    display: none;
+  }
+
+  .header__theme-menu-button_active.theme_light {
+    border: 1px solid var(--main-color);
+    padding: 2px 13px;
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgb(55 49 45 / 0.4);
+  }
+
+  .header__theme-menu-button:focus {
+    outline: none;
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--main-color);
+  }
+
+  .decorated-zone::before {
+    border-right: 1px solid var(--main-color);
+    border-top: 1px solid var(--main-color);
+  }
+
+  .decorated-zone::after {
+    border-left: 1px solid var(--main-color);
+    border-bottom: 1px solid var(--main-color);
+  }
 }
