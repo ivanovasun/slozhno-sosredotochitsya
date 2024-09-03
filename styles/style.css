@@ -68,7 +68,7 @@
 
 .REC__dark-theme {
   color: var(--accent-color);
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-text, 18px);
   position: absolute;
   inset-inline-end: 15px;
   inset-block-start: var(--small);
@@ -131,8 +131,8 @@
 .header__theme-menu-button {
   background-color: transparent;
   color: var(--accent-color);
-  font-family: var(--main-font-text);
-  font-size: var(--font-size-text);
+  font-family: var(--main-font-text, sans-serif);
+  font-size: var(--font-size-text, 18px);
   line-height: 0.18em;
   text-transform: lowercase;
   border: none;
@@ -250,7 +250,7 @@
 
 .section__title {
   color: var(--accent-color);
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-text, 18px);
   line-height: 130%;
   font-weight: 700;
   padding-block-end: 20px;
@@ -263,7 +263,7 @@
 }
 
 .section__text {
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-text, 18px);
   color: var(--main-color-text);
   font-weight: 400;
   line-height: 130%;
