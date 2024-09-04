@@ -12,7 +12,6 @@
   --font-size-text: 18px;
   --small: 10px;
   --main-color-text: #f1b2ce;
-  --bg-img: url(../images/cover-image-dark.png);
 }
 
 @media (width >=768px) {

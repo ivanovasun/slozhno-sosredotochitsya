@@ -4,7 +4,7 @@
   --main-title-color: #ffc2e6;
   --main-color-text: #353430;
   --bg-color: #fff1f7;
-  --bg-img: url(../images/cover-image-light.png);
+  background-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .section__title {
@@ -53,9 +53,13 @@
     --main-title-color: #ffc2e6;
     --main-color-text: #353430;
     --bg-color: #fff1f7;
-    --bg-img: url(../images/cover-image-light.png);
+
   }
 
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
+  
   .section__title {
     color: var(--main-color);
   }

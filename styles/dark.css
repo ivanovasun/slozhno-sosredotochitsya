@@ -12,7 +12,7 @@
   --main-title-color: #db00ff;
   --font-size-text: 18px;
   --main-color-text: #f1b2ce;
-  --bg-img: url(../images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
 }
 
 .page.theme_dark .decorated-zone::before {
