@@ -1,7 +1,6 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: url(../images/cover-image-dark.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
